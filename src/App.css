@@ -11,3 +11,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Styles pour le panneau Leva */
+[data-leva-root] {
+  position: fixed !important;
+  top: 20px !important;
+  right: 20px !important;
+  z-index: 1000 !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Styles pour le titre du panneau */
+[data-leva-root] > div:first-child {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  font-weight: bold !important;
+  border-radius: 10px 10px 0 0 !important;
+}

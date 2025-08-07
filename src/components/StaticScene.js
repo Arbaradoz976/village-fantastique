@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Environment } from '@react-three/drei';
 import { useGLTF } from '@react-three/drei';
 import FlyingDragon from './FlyingDragon';
+import PostProcessingControls from './PostProcessingControls';
 
 const StaticModel = ({ url, position = [0, 0, 0], scale = 1, rotation = [0, 0, 0] }) => {
   const { scene } = useGLTF(url);
@@ -189,6 +190,9 @@ const StaticScene = () => {
             enableZoom={true}
             enableRotate={true}
           />
+          
+          {/* Effets post-processing avec panneau Leva */}
+          <PostProcessingControls />
         </Suspense>
       </Canvas>
       
